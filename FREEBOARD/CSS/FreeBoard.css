@@ -1,0 +1,186 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+
+/*MASTER PAGE*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+}
+
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	font-weight: 300;
+}
+
+	body ::-webkit-input-placeholder {
+		/* WebKit browsers */
+		font-family: 'Source Sans Pro', sans-serif;
+		color: white;
+		font-weight: 300;
+	}
+
+	body :-moz-placeholder {
+		/* Mozilla Firefox 4 to 18 */
+		font-family: 'Source Sans Pro', sans-serif;
+		color: white;
+		opacity: 1;
+		font-weight: 300;
+	}
+
+	body ::-moz-placeholder {
+		/* Mozilla Firefox 19+ */
+		font-family: 'Source Sans Pro', sans-serif;
+		color: white;
+		opacity: 1;
+		font-weight: 300;
+	}
+
+	body :-ms-input-placeholder {
+		font-family: 'Source Sans Pro', sans-serif;
+		color: white;
+		font-weight: 300;
+	}
+
+
+/*MASTER PAGE*/
+
+.mainwall {
+	position: fixed;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	margin-top: -240px;
+	overflow: hidden;
+}
+
+.mintwall {
+	margin-left:100px;
+	margin-right:100px;
+	background-color: cadetblue;
+	padding-left: 160px;
+	height: 500px;
+}
+
+
+
+/* MOVING NAVIGATION */
+
+.hiddenwall {
+	/* Critical position and size styles */
+   /*min-height: 100%;
+	min-width: 100%;*/
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	z-index: 1;
+	/* non-critical apperance styles */
+	/*padding: 2em 1em 1em 4em;*/
+	background-size: 200%;
+	
+}
+
+.navigation {
+	/* critical sizing and position styles */
+	width: 140px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: -140px;
+	z-index: 0;
+	/* non-critical appearance styles */
+	list-style: none;
+	
+	padding-left: 15px;
+	padding-top: 30px;
+	border: 2px solid pink;
+}
+
+
+.nav-item {
+	width: 100px;
+	height: 50px;
+	background-color: rgba(77,80,133,0.1);
+}
+
+	.nav-item a {
+		display: block;	
+		padding: 1em; 
+		color: darkblue;
+		font-size: 0.9em;
+		text-decoration: none;
+		transition: color 0.2s, background 0.5s;
+	}
+
+
+
+.nav-item a:hover {
+	color: #413155;
+	background: linear-gradient(180deg, rgba(77,133,102,0.6) 0%,rgba(77,80,133,0.8) 100%);
+}
+
+
+
+.nav-trigger {
+	/* critical styles - hide the checkbox input */
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+	/* critical positioning styles */
+	position: absolute;
+	left: 120px;
+	top: 30px;
+	z-index: 2;
+	/* non-critical apperance styles */
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	background-image: url(/img/menu-icon.png);
+	background-size: contain;
+}
+
+/* MOVING FUNCTION*/
+
+
+.nav-trigger + label, .hiddenwall {
+	transition: ease-in-out 0.5s;
+}
+
+
+.nav-trigger:checked + label {
+	left: 120px;
+}
+
+.nav-trigger:checked ~ .hiddenwall {
+	left: 240px;
+	
+}
+
+
+/*030 EXPENSE PAGE*/
+
+
+.wrapper {
+	border:1px solid white;
+	display:flex;
+	flex-wrap:wrap;
+	width:95%;
+	height:90%;
+}
+
+
+/*031 EXPENSE*/
+
+.ReceiptDisplay {
+	color:darkblue;
+}

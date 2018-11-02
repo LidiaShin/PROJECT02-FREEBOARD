@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FREEBOARD.master.cs" Inherits="FREEBOARD.FREEBOARD" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<title>DODMAM PROJECT02 - FREEBOARD</title>
+	<link href="CSS/FreeBoard.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="overflow-x: hidden;">
+    <form id="form1" runat="server">
+        <div class="mainwall">
+
+			<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger"></label>
+
+			<div class="hiddenwall">
+		
+			<ul class="navigation">        
+	        <li class="nav-item" style="height:16px;" ></li>
+			<li class="nav-item"><asp:LinkButton ID="lkHome" runat="server" >HOME</asp:LinkButton ></li>
+				
+			<li class="nav-item"><asp:LinkButton ID="lkBoard" runat="server" PostBackUrl="http://www.naver.com" >BOARD</asp:LinkButton></li>
+			<li class="nav-item"><asp:LinkButton ID="lkQs" runat="server" >??</asp:LinkButton></li>
+			
+			<li class="nav-item"><asp:LinkButton ID="lkPhoto" runat="server" PostBackUrl="http://www.naver.com" >PHOTO</asp:LinkButton></li>
+
+			
+			
+			<li class="nav-item"><asp:LinkButton ID="lkAbout" runat="server" PostBackUrl="http://www.naver.com" >ABOUT</asp:LinkButton></li>
+			</ul>
+			</div>
+			<div class="mintwall">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+	</div>
+    </form>
+</body>
+</html>

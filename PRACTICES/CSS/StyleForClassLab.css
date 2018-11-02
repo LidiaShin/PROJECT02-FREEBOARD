@@ -1,0 +1,72 @@
+﻿
+
+
+body {
+	font-family:DengXian;
+	background-color:aliceblue;
+	
+}
+
+h3 {
+	color:darkblue;
+}
+
+#confirm {
+	border-radius:10px;
+	width:200px;
+}
+
+#date {
+	font-family:Britannic;
+	color:darkolivegreen;
+	font-size:20px;
+	background-color:antiquewhite;
+}
+
+.button{
+	color:indigo;
+	border-radius:5px;
+	background-color:azure;
+}
+
+.result {
+	color:darkblue;
+	font-family:Constantia;
+
+}
+
+.pageinfo {
+	font-family:Arial;
+	color:palevioletred;
+	font-size:30px;
+}
+#colored {
+	color: #e6eaec;
+	background-color: #0e2f44;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 3px;
+	margin: 3px;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+}
+
+.dropdownmenu {
+	font-family: Arial;
+	background-color: #0099FF;
+}
+
+.textbox {
+	font-family: Arial;
+	background-color: #0099FF;
+	border: 1px solid
+}
+
+.button {
+	font-family: Arial;
+	background-color: #0099FF;
+	border: 1px solid
+}
